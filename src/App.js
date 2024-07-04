@@ -6,7 +6,7 @@ function App() {
     <div>
 
 <h1> welcome to reactjs </h1>
-<p> this is samson </p>
+<h1> features 1 is added in this </h1>
     </div>
     
   );
