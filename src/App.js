@@ -1,21 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import ProfileandImage from './Components/profileandimage/profileandimage';
 import Custombutton from './Components/button/button';
-import Heading1, {Heading2} from './Components/heading/heading';
-import Orderedlist from './Components/lists/orderlist';
-import Unorderedlist from './Components/lists/unorderedlist';
-import Profilecomponents from './profilecomponents/profile';
-import Tabledata from './tables/table';
-import Cardsinfomation from './cards/cards';
+import CustomImage from './Components/image/customimage';
+import Heading1 from './Components/heading/heading';
+import { Ipldata } from './Components/lists/data';
+import ListIplTeam from './Components/listofplayers.js/listofplayers';
 function App() {
   return (
+    
   <div>
-   <Profilecomponents/>
-   <Tabledata />
-   <Cardsinfomation />
-  </div>
-  )
-}
 
+<ListIplTeam/>
+
+
+</div>
+);
+}
 export default App;
+                                                                                                                                                                                                                                                                                                                                                                                                              

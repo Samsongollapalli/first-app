@@ -1,18 +1,17 @@
 
-const Heading1 =() => {
+const Heading1 =(prop) => {
+    const {title,Trophy,captain,Players} = prop
+
     return (
-        <h1> React js  </h1>
+        <div>
+        <h1> {title}   </h1>
+        <h1>  {Trophy}  </h1>
+        <h1> {captain} </h1>
+        <h2> {Players} </h2>
+
+        </div>
     )
 };
 export default Heading1
- export const Heading2 =() => {
-    return (
-        <h2> hello this is react  </h2>
-    )
-};
 
- export const Heading3 =() => {
-    return (
-        <h1> Hello This Heading 3 </h1>
-    )
-};
+

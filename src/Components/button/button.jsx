@@ -1,8 +1,8 @@
 
-const Custombutton = () => {
-    return  (
-        <button> login Here </button>
-    )
+const Custombutton = (prop) => {
+    const { text, bgColor ,width=100} = prop.properties
+    return  <button style={{backgroundColor:bgColor,width:width, }} >{text} </button>
+
 }
 
 export default Custombutton;
