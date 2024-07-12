@@ -2,13 +2,16 @@
 import { Ipldata  } from "../lists/data";
 import Heading1 from "../heading/heading";
 import CustomImage from "../image/customimage";
+import NavbarList from "../lists/navbarlist";
+import FooterDetails from "../footer/footer";
 
 const ListIplTeam =()=>{
     return(
-
-        <div style={{textAlign:"center",border:"2px solid black"}}>
+<div>
+<NavbarList/>
+        <div className="button">
             {Ipldata.map(eachName=>{return(
-  <div style={{border:"2px solid black"}}>
+<div className="main">
 <Heading1 title ={eachName.Name}/>
 <CustomImage source={eachName.source} 
 altText = "Ipllogo"
@@ -22,9 +25,13 @@ height={150}
 
     </div>
 )})
+
 }
         </div>
+        <FooterDetails/>
+        </div>
+      
     )
 };
 
-export default ListIplTeam;
+export default ListIplTeam; 

@@ -1,7 +1,11 @@
 
+import "./button.css"
+
 const Custombutton = (prop) => {
-    const { text, bgColor ,width=100} = prop.properties
-    return  <button style={{backgroundColor:bgColor,width:width, }} >{text} </button>
+    const { text, bgColor ,width,height=100} = prop
+    const mystyle = {backgroundColor:bgColor,width:width,height:height }
+    
+    return  <button class = "button" > {text} </button>
 
 }
 
