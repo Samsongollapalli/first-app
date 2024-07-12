@@ -9,14 +9,14 @@ import ListIplTeam from './Components/listofplayers.js/listofplayers';
 import Greeting from './Components/greeting/greeting';
 import GreetingData from './Components/Data/Greetingdata';
 import FooterDetails from './Components/footer/footer';
+import Sampleexample from './Components/image/sample';
+import SampleHeading1 from './Components/heading/sample';
 function App() {
   return (
     
   <div>
 
 <ListIplTeam/>
-
-
 </div>
 );
 }

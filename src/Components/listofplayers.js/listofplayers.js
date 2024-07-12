@@ -8,6 +8,7 @@ import FooterDetails from "../footer/footer";
 const ListIplTeam =()=>{
     return(
 <div>
+
 <NavbarList/>
         <div className="button">
             {Ipldata.map(eachName=>{return(
@@ -25,8 +26,8 @@ height={150}
 
     </div>
 )})
-
 }
+
         </div>
         <FooterDetails/>
         </div>
