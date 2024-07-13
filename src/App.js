@@ -11,12 +11,18 @@ import GreetingData from './Components/Data/Greetingdata';
 import FooterDetails from './Components/footer/footer';
 import Sampleexample from './Components/image/sample';
 import SampleHeading1 from './Components/heading/sample';
+import ProgressDetails from './Components/progress/progress';
+import Listoffruit from './Components/lists/listvegetable';
 function App() {
   return (
     
   <div>
 
 <ListIplTeam/>
+
+{/* <Listoffruit fruits ={["apple","mango","watermeloan"]} /> */}
+
+
 </div>
 );
 }

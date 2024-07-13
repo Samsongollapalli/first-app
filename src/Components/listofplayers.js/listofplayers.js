@@ -4,8 +4,16 @@ import Heading1 from "../heading/heading";
 import CustomImage from "../image/customimage";
 import NavbarList from "../lists/navbarlist";
 import FooterDetails from "../footer/footer";
+import ProgressDetails from "../progress/progress";
 
 const ListIplTeam =()=>{
+
+    const calculatepoints=(input)=>{
+        const base = 17
+        let No_oftropies=(input/base)*100
+        
+       return No_oftropies 
+      }
     return(
 <div>
 
@@ -21,9 +29,9 @@ height={150}
 />
 
 <Heading1 captain = {eachName.captain}/>
-<Heading1 Players = {eachName.Players}/>
 <Heading1 Trophy ={eachName.Trophy}/>
-
+<ProgressDetails scale ={calculatepoints(eachName.Trophy)}/>
+<Heading1 Players = {eachName.Players}/>
     </div>
 )})
 }
@@ -35,4 +43,4 @@ height={150}
     )
 };
 
-export default ListIplTeam; 
+export default ListIplTeam;
