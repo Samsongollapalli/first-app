@@ -1,17 +1,16 @@
-import Ipldata from "../data/data";
+import Recipe from "../data/recipe";
 
-
-const Iplmenu=()=>{
+const RecipeDetails=()=>{
     return(
         <div>
-            {Ipldata.map(each=>{
-                return(
-                    <div>
-                        
-                        </div>
-                )
-            })}
+            {Recipe.map(RecipeList=>{return(
+ <div> 
+
+
+    
+ </div>
+            )})
+            }
         </div>
     )
-
 }
