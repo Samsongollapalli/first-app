@@ -4,27 +4,15 @@ import ProfileandImage from './Components/profileandimage/profileandimage';
 import Custombutton from './Components/button/button';
 import CustomImage from './Components/image/customimage';
 import Heading1 from './Components/heading/heading';
-import { Ipldata } from './Components/lists/data';
-import ListIplTeam from './Components/listofplayers.js/listofplayers';
-import Greeting from './Components/greeting/greeting';
-import GreetingData from './Components/Data/Greetingdata';
-import FooterDetails from './Components/footer/footer';
-import Sampleexample from './Components/image/sample';
-import SampleHeading1 from './Components/heading/sample';
-import ProgressDetails from './Components/progress/progress';
-import Listoffruit from './Components/lists/listvegetable';
+import CustomRecipe from './Components/july/13/2024/customrecipe';
+
+
 function App() {
   return (
-    
-  <div>
-
-<ListIplTeam/>
-
-{/* <Listoffruit fruits ={["apple","mango","watermeloan"]} /> */}
-
-
-</div>
-);
+   <>
+   <CustomRecipe/>
+   </>
+  )
 }
 export default App;
                                                                                                                                                                                                                                                                                                                                                                                                               
