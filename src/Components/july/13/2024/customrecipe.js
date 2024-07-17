@@ -30,10 +30,10 @@ const CustomRecipe = () => {
 
     return (
         <div class="recipe">
-            {RecipeDetails.map((eachrecipe) => {
+            {RecipeDetails.map((eachrecipe) =>{
                 console.log(eachrecipe.name, eachrecipe.id);
                 return (
-                 // <div key={eachrecipe.id}>
+                //  {/* // <div key={eachrecipe.id}> */}
                     <div className="recipecontainer">
                         <RecipeItems name={eachrecipe.name} />
                         <CustomImage source={eachrecipe.image} altText="food" height={200} width={200} />
