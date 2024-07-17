@@ -1,0 +1,18 @@
+
+.oddnumber{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+}
+.evennumber{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center; 
+}
+.numberdiv{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+}
+
