@@ -8,13 +8,13 @@
 
 // const ListIplTeam =()=>{
 
-//     const calculatepoints=(input)=>{
-//         const base = 17
-//         let No_oftropies=(input/base)*100
+    // const calculatepoints=(input)=>{
+    //     const base = 17
+    //     let No_oftropies=(input/base)*100
         
-//        return No_oftropies 
-//       }
-//     return(
+    //    return No_oftropies 
+    //   }
+    // return(
 // <div>
 
 // <NavbarList/>

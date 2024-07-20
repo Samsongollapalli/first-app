@@ -1,0 +1,12 @@
+
+.sqaure_even{
+    background-color: skyblue;
+    height: 100px;
+    width: 100px;
+}
+
+.square_odd{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}

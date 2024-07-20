@@ -1,0 +1,19 @@
+.main{
+    text-align: center;
+    height: 250px;
+    width: 500px;
+    background-color: yellow;
+}
+.Incrementbutton{
+    background-color: green;
+    border: 1px solid black;
+}
+.Drebutton{
+    background-color: red;
+    border: 1px solid black;
+}
+.reset{
+    background-color: skyblue;
+    border: 1px solid black;
+}
+
