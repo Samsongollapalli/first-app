@@ -11,9 +11,10 @@ class CountryNames extends Component {
     CounterNamesHanding=async()=>{
     try{
 const{status,data} = await axios.get("https://restcountries.com/v3.1/all")
+console.log(status)
  if(status===200){
-   this.setstate({
-     CountryNames : data.names,
+   this.setState({
+     CountryNames : data,
      loader : false
    })
  }
@@ -26,7 +27,7 @@ const{status,data} = await axios.get("https://restcountries.com/v3.1/all")
     }
 
     componentDidMount(){
-        this.fetchCountryNames();
+        this.CounterNamesHanding();
     }
     render(){
         
@@ -37,10 +38,13 @@ const{status,data} = await axios.get("https://restcountries.com/v3.1/all")
              this.state.loader ? <h1> Countery List Loading </h1> : 
              <>
              {
-                this.state.CountryList.map((names)=>{
-                    const {official} = names
+                this.state.CountryNames.map((country)=>{
+                    const {official,common} = country.name
                     return(
-                    <h2 key={names}> {official}</h2>
+                        <div key={country}>
+                    <h2 > {official}</h2>
+                    <p> {common}</p>
+                    </div>
                 )})
              }
              </>
