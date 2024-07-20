@@ -21,9 +21,8 @@ function App() {
   return (
    <>
 
-<RecipeList/>
-{/* <Customlistformap/> */}
-<CountryNames/>
+
+<FetchExample/>
 </>
   )
 }
