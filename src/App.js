@@ -20,9 +20,8 @@ import CountryNames from './Task\'s/july182024/country';
 function App() {
   return (
    <>
+ <RecipeList/>
 
-
-<FetchExample/>
 </>
   )
 }
