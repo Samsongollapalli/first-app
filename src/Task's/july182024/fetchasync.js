@@ -1,5 +1,6 @@
 const { Component } = require("react");
 
+
 class FetchAsyncExample extends Component{
     state={
         products:[],
@@ -33,11 +34,11 @@ class FetchAsyncExample extends Component{
             {
               this.state.loader ? <h1> Please  wait </h1> : 
               <div>
-              {this.state.products.map((each,index)=>{return(
+              {this.state.products.map((each)=>{return(
                 <>
                 <h1 key={each.id}>{title}</h1>
                 <p> {each.description}</p>
-                </> )
+                </> )  
               })}
               </div> 
             }

@@ -35,7 +35,7 @@ import "./fetch.css"
     render(){
 return(
     <React.Fragment>
-        <h1> Hello </h1>
+        <h1> Recipe Listr </h1>
         {
             this.state.loader ?  <><h1> Please wait..... </h1></>
             :
@@ -55,7 +55,7 @@ return(
                 this.state.RecipeList.map(each=>{
                     const {id,name,image,ingredients,instructions} = each
                     return(
-                        // <div key={each.id}>
+                        <div key={each.id}>
 
 
 <tr key={each.id}>
@@ -78,10 +78,10 @@ return(
                         )})}
                         </ul></td>
         {/* <td> <Customlistformap list= {instructions}/></td> */}
-                
+        
     </tr>
 
-            //   </div>
+              </div>
                     )
                 }) 
              }

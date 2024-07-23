@@ -11,17 +11,19 @@ import TodoCompontent from './Components/conditional-renderning/todos';
 import Countincreanddec from './Task\'s/july162024/Count';
 import FetchExample from './Task\'s/july172024/fetch';
 import Squarelist from './Task\'s/july172024/square';
-import FetchAsyncExample from './Task\'s/july182024/fetchasync';
 import RecipeList from './Task\'s/july182024/FetchusingAxioc';
 import Customlistformap from './Components/lists/customlist';
 import CountryNames from './Task\'s/july182024/country';
+import ProfileListComponent from './Task\'s/july222024/profileimage';
+import CustomImageorder from './Task\'s/july222024/image';
 
 
 function App() {
   return (
    <>
-   <RecipeList/>
-<CountryNames/>
+{/* <RecipeList/> */}
+<ProfileListComponent/>
+{/* <CustomImageorder/> */}
 </>
   )
 }
