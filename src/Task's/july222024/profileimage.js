@@ -3,7 +3,7 @@ import axios from "axios";
 import "./profile.css"
 import CustomImageorder from "./image";
 import CustomImage from "../../Components/image/customimage";
-import image from "./image";
+import Image from "./image";
 
 class ProfileListComponent extends Component{
     state={
@@ -43,10 +43,10 @@ class ProfileListComponent extends Component{
                         const {name,username,email} = eachlist
                         return(
                             <div key={index} className="container">
-                            <img src={image[index]} width="200" height="200"></img>
-                            <h1> {name}</h1>
+                            <img src={Image[index]} width="200" height="200"/> 
+                            <h1> {name} </h1>
                             <h3> {username} </h3>
-                            <p> {email}</p>
+                            <p> {email} </p>
                             </div>
                         )
                     })
