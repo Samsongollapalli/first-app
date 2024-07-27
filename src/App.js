@@ -20,7 +20,12 @@ import UseStateExample from './Components/hooks/usestate/usestateexample';
 import UseStateExampletwo from './Components/hooks/usestate/usestateExample2';
 import TableList from './Task\'s/july232024/tableusingaddbutton';
 import ShowGreeeting from './Components/hooks/usestate/usestateexample3';
+import UseEffectExample2 from './Components/hooks/useeffect/useeffectExample';
+import UnControlledComponent from './Components/forms/uncontrolledcomponent';
+import FormRegisteration from './Task\'s/july252024/uncontrolledformregisteration';
+import UseEffectExample from './Task\'s/july242024/useeffect';
 
+   
 function App() {
   return (
    <>
@@ -30,8 +35,14 @@ function App() {
 {/* <CustomImageorder/> */}
 {/* <UseStateExample/>
 <UseStateExampletwo/> */}
-<TableList/>
+{/* <TableList/> */}
 {/* <ShowGreeeting/> */}
+<UseEffectExample/>
+{/* <UseEffectExample/> */}
+{/* <UseEffectExample2/> */}
+{/* <UnControlledComponent/> */}
+{/* <FormRegisteration/> */}
+
 
 </>
   )
