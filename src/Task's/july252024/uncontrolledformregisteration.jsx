@@ -6,12 +6,24 @@ const FormRegisteration=()=>{
     const GmailRef = useRef();
     const PhoneNumberRef = useRef();
      const [error,SetError]=useState();
-    const SubmitHandler=()=>{
+     const [list,setlist]= useState([]); 
+    const SubmitHandler=(event)=>{
+          event.preventDefault()
              const FirstNameEntered = FirstNameRef.current.value;
              const LastNameEntered = LastNameRef.current.value;
-             const GamilRefEntered = GmailRef.current.value;
+             const GmailRefEntered = GmailRef.current.value;
              const PhoneNumberEntered = PhoneNumberRef.current.value;
-    }
+             console.log(FirstNameEntered,LastNameEntered,GmailRefEntered,PhoneNumberEntered);
+             const ListOfData=[]
+             const DetailsList={
+              firstName:FirstNameEntered,
+              LastName:LastNameEntered,
+              Gmail:GmailRefEntered,
+              PhoneNumber:PhoneNumberEntered,
+             }
+             ListOfData.push(DetailsList)
+             window.localStorage.setItem("Details",JSON.stringify(ListOfData));
+            }
     return(
         <>
         <h1> Please Register </h1>
@@ -63,7 +75,6 @@ const FormRegisteration=()=>{
       
     />
   </div>
-
   <button type="submit" className="btn btn-primary">
     Submit
   </button>

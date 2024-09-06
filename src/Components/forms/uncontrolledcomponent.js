@@ -5,6 +5,7 @@ const UnControlledComponent=()=>{
     const emailRef = useRef();
     const passwordRef = useRef();
     const [error,seterror]=useState(null);
+    const [user,SetUser] = useState({})
     const SubmitHanlder=(event)=>{
         event.preventDefault();
        const EmailEntered = emailRef.current.value;
@@ -21,11 +22,10 @@ const UnControlledComponent=()=>{
 
     const successHandler = async(username,password)=>{
         try{
-        const Response = await fetch('https://dummyjson.com/user/login', {
+        const Response = await fetch('https://dummyjson.com/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              
               username,
               password,
               
@@ -33,8 +33,17 @@ const UnControlledComponent=()=>{
           })
           const final=await Response.json()
           console.log(final)
+
+          if(final.message){
+                alert(final.message)
+          }
+          else{
+            console.log(final,"Response")
+            SetUser(final);
+          }
 } catch (error){
 
+  
 }
 
     }
@@ -42,45 +51,47 @@ const UnControlledComponent=()=>{
 
     return(
         <>
-     <form onSubmit={SubmitHanlder}>
-  <div className="mb-3 mt-3">
-    <label htmlFor="email" className="form-label">
-      Email:
-    </label>
-    <input
-      type="text"
-      className="form-control"
-      id="email"
-      placeholder="Enter email"
-      name="email"
-      ref={emailRef}
-    />
-  </div>
-  <div className="mb-3">
-    <label htmlFor="pwd" className="form-label">
-      Password:
-    </label>
-    <input
-      type="password"
-      className="form-control"
-      id="pwd"
-      placeholder="Enter password"
-      name="pswd"
-      ref={passwordRef}
-    />
-  </div>
-  {error&&<span>{error}</span>}
-  <div className="form-check mb-3">
-    {/* <label className="form-check-label">
-      <input className="form-check-input" type="checkbox" name="remember" />{" "}
-      Remember me
-    </label> */}
-  </div>
-  <button type="submit" className="btn btn-primary">
-    Submit
-  </button>
-</form>
-   
+     {
+      Object.keys(user).length> 0 ? <> <h1> Welcome {user.firstName} </h1> </> : 
+      <form onSubmit={SubmitHanlder}>
+      <div className="mb-3 mt-3">
+        <label htmlFor="email" className="form-label">
+          Email:
+        </label>
+        <input
+          type="text"
+          className="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          ref={emailRef}
+        />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="pwd" className="form-label">
+          Password:
+        </label>
+        <input
+          type="password"
+          className="form-control"
+          id="pwd"
+          placeholder="Enter password"
+          name="pswd"
+          ref={passwordRef}
+        />
+      </div>
+      {error&&<span>{error}</span>}
+      <div className="form-check mb-3">
+        {/* <label className="form-check-label">
+          <input className="form-check-input" type="checkbox" name="remember" />{" "}
+          Remember me
+        </label> */}
+      </div>
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
+    </form>
+     }
         </>
     )
 }

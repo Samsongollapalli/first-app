@@ -12,6 +12,7 @@ IncrementHandler=()=>{
         },()=>{}
     )
 }
+
 DecrementHandler=()=>{
     this.setState(
         {

@@ -1,0 +1,110 @@
+
+.active{
+color: red;
+}
+.recipeDetails{
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+}
+.maincontainer{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   text-align: center;
+   background-color: rgb(234, 234, 234);
+
+  
+}
+.ViewButtom{
+    background-color: blue;
+    height: 50px;
+    width:150px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.ViewButtom:hover{
+    background-color: red;
+    color: white;
+}
+
+.AddfoodHandler{
+    background-color: blue;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.AddfoodHandler:hover{
+    background-color: red;
+    color: white;
+}
+.viewandadd{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.recipename{
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(255, 56, 56);
+}
+
+.Favouritedishadded{
+    /* text-align: center; */
+}
+.Recipename{
+    color: orangered;
+}
+.favouritename{
+    color: orange;
+}
+.removeButton{
+  background-color: red;
+  height: 50px;
+  width: 170px;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.removeButton:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+.Favouritedishadded{
+    display: grid;
+}
+.search{
+    text-align: center;
+}
+.searchdiv{
+    text-align: center;
+    margin: 20px;
+}
+
+.recipeviewdetails{
+    margin-left: 500px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(222, 221, 221);
+    width: 350px;
+}
+
+.Favouritedishadded{
+    margin: 25px;
+}
+
+.mainavouritediv{
+    display: grid;
+    margin: 20px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+}

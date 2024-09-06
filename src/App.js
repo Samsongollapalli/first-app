@@ -24,28 +24,53 @@ import UseEffectExample2 from './Components/hooks/useeffect/useeffectExample';
 import UnControlledComponent from './Components/forms/uncontrolledcomponent';
 import FormRegisteration from './Task\'s/july252024/uncontrolledformregisteration';
 import UseEffectExample from './Task\'s/july242024/useeffect';
+import Samson from './Navigation/navigation';
+import CountryApi from './Task\'s/Aug012024/Countrys-Data';
+import HomeScreen from './Screens/homescreen';
+import NavigationsPage from './Navigation/NavigationPage';
+import RecipeNavigation from './Task\'s/Aug032024-RecipeApp/NavigationRecipeMaler';
+import UsereducerExample from './Components/hooks/usereducer/usereducerExample';
+import Fakestoreapi from './practice/fakestoreapitable';
+import WeatherApi from './Task\'s/weatherApi/weather';
+import Numberlis from './Task\'s/july152024/number';
 
-   
+
+
+
 function App() {
   return (
-   <>
+    <>
+      {/* <Countincreanddec />
+      <FetchExample/> */}
+      <CountryNames/>
 
-{/* <RecipeList/> */}
-{/* <ProfileListComponent/> */}
-{/* <CustomImageorder/> */}
-{/* <UseStateExample/>
-<UseStateExampletwo/> */}
-{/* <TableList/> */}
-{/* <ShowGreeeting/> */}
-<UseEffectExample/>
-{/* <UseEffectExample/> */}
-{/* <UseEffectExample2/> */}
-{/* <UnControlledComponent/> */}
-{/* <FormRegisteration/> */}
-
-
-</>
+      {/* <RecipeList/> */}
+      {/* <ProfileListComponent/> */}
+      {/* <CustomImageorder/> */}
+      {/* <UseStateExample/>
+    {/* <UseStateExampletwo/> */}
+      {/* <TableList/> */}
+      {/* <ShowGreeeting/> */}
+      {/* <UseEffectExample/> */}
+      {/* <UseEffectExample/> */}
+      {/* <UseEffectExample2/> */}
+      {/* <UnControlledComponent/> */}
+      {/* <FormRegisteration/> */}
+      {/* <ControlComponents/> */}
+      {/* <NavigationsPage/> */}
+      {/* <NavigationTask/> */}
+      {/* <RecipesInput/> */}
+      {/* <Samson/> */}
+      {/* <HomeScreen/> */}
+      {/* <CountryApi/> */}
+      <RecipeNavigation/>
+      {/* <UsereducerExample/> */}
+      {/* <Fakestoreapi /> */}
+      {/* <WeatherApi/> */}
+      {/* <Conditional_Rendering/> */}
+      {/* <Numberlis/> */}
+     
+    </>
   )
 }
 export default App;
-                                                                                                                                                                                                                                                                                                                                                                             
