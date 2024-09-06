@@ -40,36 +40,7 @@ import Numberlis from './Task\'s/july152024/number';
 function App() {
   return (
     <>
-      {/* <Countincreanddec />
-      <FetchExample/> */}
-      <CountryNames/>
-
-      {/* <RecipeList/> */}
-      {/* <ProfileListComponent/> */}
-      {/* <CustomImageorder/> */}
-      {/* <UseStateExample/>
-    {/* <UseStateExampletwo/> */}
-      {/* <TableList/> */}
-      {/* <ShowGreeeting/> */}
-      {/* <UseEffectExample/> */}
-      {/* <UseEffectExample/> */}
-      {/* <UseEffectExample2/> */}
-      {/* <UnControlledComponent/> */}
-      {/* <FormRegisteration/> */}
-      {/* <ControlComponents/> */}
-      {/* <NavigationsPage/> */}
-      {/* <NavigationTask/> */}
-      {/* <RecipesInput/> */}
-      {/* <Samson/> */}
-      {/* <HomeScreen/> */}
-      {/* <CountryApi/> */}
       <RecipeNavigation/>
-      {/* <UsereducerExample/> */}
-      {/* <Fakestoreapi /> */}
-      {/* <WeatherApi/> */}
-      {/* <Conditional_Rendering/> */}
-      {/* <Numberlis/> */}
-     
     </>
   )
 }
