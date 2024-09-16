@@ -1,4 +1,4 @@
-.WeatherList{
+/* .WeatherList{
     text-align: center;
     margin-top: 50px;
     margin: 0px;
@@ -17,4 +17,98 @@
 
 body{
    
-}
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/sun-lens-flare-with-clouds-blue-sky-background_1017-38291.jpg?w=1060&t=st=1726502799~exp=1726503399~hmac=bd996caad6bd581565cde3812f81a6037a5cd996f1c9bd83ea36f05314931f21");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.WeatherList {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .WeatherList h3 {
+    color: #333;
+  }
+  
+  .WeatherList:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .WeatherList form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="search"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* input[type="search"]:hover {
+    border-color: #007bff;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #999;
+  } */
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .dataofcity {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .dataofcity h4 {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .dataofcity:hover {
+    background-color: #eef;
+    transform: translateY(-3px);
+  }
+  
+  .dataofcity h4:hover {
+    color: #007bff;
+  }

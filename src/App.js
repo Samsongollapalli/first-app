@@ -33,6 +33,8 @@ import UsereducerExample from './Components/hooks/usereducer/usereducerExample';
 import Fakestoreapi from './practice/fakestoreapitable';
 import WeatherApi from './Task\'s/weatherApi/weather';
 import Numberlis from './Task\'s/july152024/number';
+import ControlComponents from './Components/forms/controlsComponent';
+import Example from './Components/ExampleFolder/ApiCallingexample';
 
 
 
@@ -40,7 +42,13 @@ import Numberlis from './Task\'s/july152024/number';
 function App() {
   return (
     <>
-      <RecipeNavigation/>
+      {/* <RecipeNavigation/> */}
+      {/* <UseStateExample/>
+      <UseEffectExample/> */}
+      {/* <UnControlledComponent/> */}
+      {/* <ControlComponents/> */}
+      {/* <Example />  */}
+      <WeatherApi/>
     </>
   )
 }
